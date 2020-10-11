@@ -5,4 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.app = void 0;
 const express_1 = __importDefault(require("express"));
-exports.app = express_1.default();
+const UserRoutes_1 = require("./routes/UserRoutes");
+const app = express_1.default();
+exports.app = app;
+app.use(express_1.default.json());
+app.use('api/v1/user', UserRoutes_1.userRouter);

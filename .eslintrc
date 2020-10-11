@@ -8,5 +8,33 @@
       "eslint:recommended",
       "plugin:@typescript-eslint/eslint-recommended",
       "plugin:@typescript-eslint/recommended"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/no-explicit-any": 0,
+      "whitespace": [
+        true,
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-separator",
+        "check-type"
+      ],
+      "semicolon": [
+        true,
+        "never"
+      ],
+      "one-line": [
+        true,
+        "check-open-brace",
+        "check-catch",
+        "check-else",
+        "check-finally",
+        "check-whitespace"
+      ],
+      "quotemark": [
+        true,
+        "single",
+        "avoid-escape"
+      ]
+    }
   }
